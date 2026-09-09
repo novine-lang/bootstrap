@@ -1,2 +1,3 @@
 (library
- (name bootstrap))
+ (name bootstrap)
+ (modules settings compile))

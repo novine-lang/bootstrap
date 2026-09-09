@@ -1,4 +1,4 @@
 (executable
  (public_name bootstrap)
  (name main)
- (libraries bootstrap))
+ (libraries bootstrap cmdliner))
