@@ -1,9 +1,11 @@
 open Cmdliner
-open Bootstrap
+module Compile = Bootstrap.Compile
+module Settings = Bootstrap.Settings
 
 let validate_filename filename =
   let ext = Filename.extension filename in
   if ext = ".nv" then filename
+  else if ext = ".nvs" then filename
   else failwith (Printf.sprintf
                    "File '%s' has invalid extension '%s'. Expected '.nv'."
                    filename ext)
